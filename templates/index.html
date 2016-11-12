@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blue Skys Tours Jamaica</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static', filename='css/full-slider.css') }}" rel="stylesheet">
+    
+    <link href="{{ url_for('static', filename='css/page.css') }} " rel="stylesheet">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#" style="padding:0px;">
+                    <img src="{{ url_for('static', filename='img/blueskystoursstencil2-white.png') }}"
+                         class="center-block"
+                         style="height:inherit;"/>
+                </a>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('{{url_for('static', filename='img/border.jpeg')}}');"></div>
+                <div class="carousel-caption">
+                    <h2>Tours that EXCITE, ENTERTAIN and EDUCATE.</h2>
+                    
+                    <h2 class="btn btn-default"
+                        href="#kingston-tour"> BOOK YOUR TOUR NOW! </h2>
+                    
+                    <h2> Tours Offered: </h2>
+                    <h4> Kingston </h4>
+                    <h4> Blue Mountain </h4>
+                    <h4> Port Royal </h4>
+                    <h4> Out of Town </h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+    <!-- Page Content -->
+    <div class="container-fluid" name="content">
+            <a name="tours"></a>
+            <a name="kingston-tour"></a>
+            <div class="row" style="background-color:#67e071;">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h1 style="display: inline-block;
+                               border-bottom-left-radius: 20px;
+                               border-bottom-right-radius: 5px;
+                               background: linear-gradient(#67E071, #EAEAEA);
+                               padding-right: 30px;">
+                        Kingston Tour
+                    </h1>
+                    <p> 
+                        Imagine exploring and experiencing Jamaica’s history, 
+                        customs and traditions. Join us as we tell the story 
+                        of Jamaica’s Emancipation from slavery, Heroes, 
+                        Politics, musical heritage and world class athletes. 
+                        Come and view our National Parks, Art Institutions, 
+                        main food market and eat lunch at one of our main food
+                        stops. We guarantee that we will give you the true 
+                        Jamaican experience as you explore the dynamics of 
+                        Kingston, meet and mingle with its warm and friendly 
+                        people and enjoy, the “Heartbeat of Jamaica”.
+                    </p>
+                    <a class="btn btn-default" 
+                       href="mailto:infinity.genservices@gmail.com?Subject=Kingston%20Tours">
+                        Book Now
+                    </a>
+                </div>
+            </div>
+            <a name="port-royal-tour"></a>
+            <div class="row" style="background-color:#66a2e2;">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h1 style="display: inline-block;
+                               border-bottom-left-radius: 20px;
+                               border-bottom-right-radius: 5px;
+                               background: linear-gradient(#66A2E2, #EAEAEA);
+                               padding-right: 30px;">
+                        Port Royal Tour
+                    </h1>
+                    <p>
+                        Visit which was once called, the “Richest and Wickedest 
+                        City in the whole world.” Learnabout the Buccaneers, 
+                        the great earthquake, enjoy the town’s history, scenery
+                        and enjoy a delicious Jamaican seafood meal. Also view 
+                        the Plumbline Light house and be renewed and revived at
+                        the Rock fort Mineral Bath.
+                    </p>
+                    <a class="btn btn-default" 
+                       href="mailto:infinity.genservies@gmail.com?Subject=Port%Royal&20Tour">
+                        Book Now
+                    </a>
+                </div>
+            </div>
+            <a name="blue-mountain-tour"></a>
+            <div class="row" style="background-color:#eae667;">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h1 style="display: inline-block; 
+                               border-bottom-left-radius: 20px; 
+                               border-bottom-right-radius: 5px; 
+                               background: linear-gradient(#EAE667, #EAEAEA); 
+                               padding-right:30px;">
+                        Blue Mountain Tour
+                    </h1>
+                    <p>
+                        Take the trip up to our world re-nowned Blue Mountains 
+                        where you will enjoy spectacular views. Enjoy New Castle
+                        one of our army's bases then visit Hollywell Botanical
+                        Gardens where you can hike, swim or just enjoy the 
+                        beautiful garden with its indegenous flowers, fauna and 
+                        birds. Then on to Cafe Blue for our world class coffee
+                        or just enjoy an authentic delicious Jamaican meal.
+                    </p>
+                    <a class="btn btn-default"
+                       href="mailto:infinity.genservices@gmail.com?Subject=Blue%20Mountain%20Tour">
+                        Book Now
+                    </a>
+                </div>
+            </div>
+            <a name="out-of-town-tour"></a>
+            <div class="row" style="background-color:#e05c5c">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h1 style="display: inline-block;
+                               border-width: 3px;
+                               border-solid: solid;
+                               border-image: linear-gradient(#E05C5C, #EAEAEA);
+                               padding-right:30px;">
+                        Out of Town Tours
+                    </h1>
+                    <p>
+                        Based on personal requests, tailored to meet and exceed
+                        our visitors’ expectations. Include the North, South, 
+                        East and West Coasts of Jamaica, designed as, “off the 
+                        beaten path.” 
+                    </p>
+                    <a class="btn btn-default"
+                       href="mailto:infinity.genservices@gmail.com?Subject=Out%20Of%20Town%Tours">
+                        Book Now
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h1> Contact Us </h1>
+                    <p>
+                        To Book : Contact Arlene Bhoorasingh (CEO) at 
+                        infinity.genservices@gmail.com or call us on 
+                        876-359-8204:876-813- 3995 0r 716-381- 4585.
+                    </p>
+                </div>
+            </div>
+        </a>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Sky Blue Tours Jamaica 2014</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="{{ url_for('static' , filename='js/jquery.js') }}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
