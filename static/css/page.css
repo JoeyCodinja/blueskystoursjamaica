@@ -10,16 +10,6 @@
     width: inherit;
 }
 
-.navbar.navbar-fixed-top{
-    border-color:#222222;
-
-}
-
-.navbar.tours{
-    height:initial !important; 
-    margin-top:100px !important;
-}
-
 .panel-body p{ 
     font-size: medium;
 }
@@ -29,7 +19,7 @@
 }
 
 .row{ 
-    padding-top:180px;
+    padding-top:100px;
 } 
 
 .row p {
@@ -61,8 +51,7 @@ footer .row p{
 }
 
 .carousel-caption h4:nth-child(1){
-    background-color: #67E071;
-    border-color: #;
+    
 }
 
 .carousel-caption h4:nth-child(2){
@@ -120,7 +109,7 @@ footer .row p{
     }
 }
 
-@media screen and (min-height: 768px)  {
+@media screen and (min-height: 768px){
     .row{ 
         height: 940px;
     }
@@ -131,8 +120,7 @@ footer .row p{
     }
 
     .row p{ 
-        font-size: 32px;
-        height:420px;
+        font-size: 36px;
     }
     
     .row .btn{
