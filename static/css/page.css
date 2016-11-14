@@ -15,9 +15,13 @@
 
 }
 
+.navbar-nav{
+    float:none;
+    margin-left: 35%;
+}
+
 .navbar.tours{
-    height:initial !important; 
-    margin-top:60px !important;
+    margin-top:60px;
 }
 
 .panel-body p{ 
@@ -101,7 +105,7 @@ footer .row p{
     }
     
     [name$=-tour] + .row p{
-        font-size: 14px;
+        font-size: 18px;
         height: 180px;
     }
     
@@ -137,8 +141,8 @@ footer .row p{
     }
 
     [name$=-tour] + .row p{ 
-        font-size: 24px;
-        height: 240px;
+        font-size: 20px;
+        height: 260px;
     }
     
     [name$=-tour] + .row .btn{
