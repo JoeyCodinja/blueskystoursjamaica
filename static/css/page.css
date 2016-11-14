@@ -17,7 +17,7 @@
 
 .navbar.tours{
     height:initial !important; 
-    margin-top:100px !important;
+    margin-top:60px !important;
 }
 
 .panel-body p{ 
@@ -32,8 +32,13 @@
     padding-top:180px;
 } 
 
+.row h1{
+    color:white;
+}
+
 .row p {
     text-align: justify;
+    color: white;
 }
 
 .row .btn{ 
@@ -97,11 +102,12 @@ footer .row p{
     
     .row p{
         font-size: 14px;
+        height: 180px;
     }
     
     .row .btn{
         width: 180px;
-        font-size:25px;
+        font-size:15px;
     }
     
 }
@@ -112,7 +118,7 @@ footer .row p{
     }
     
     .navbar.navbar-fixed-top{    
-        height:100px;
+        height:60px;
     }
     
     .navbar *{
@@ -126,18 +132,18 @@ footer .row p{
     }
 
     .row h1{
-        font-size: 64px;
-        margin-bottom:30px;
+        font-size: 48px;
+        margin-bottom: 30px;
     }
 
     .row p{ 
-        font-size: 32px;
-        height:420px;
+        font-size: 24px;
+        height: 240px;
     }
     
     .row .btn{
-        width: 240px;
-        font-size:35px;
+        width: 180px;
+        font-size:25px;
     }
 }
 
