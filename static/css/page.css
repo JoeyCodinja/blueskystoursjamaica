@@ -28,15 +28,15 @@
     font-size: x-large;
 }
 
-.row{ 
+[name$=-tour] + .row{ 
     padding-top:180px;
 } 
 
-.row h1{
+[name$=-tour] + .row h1{
     color:white;
 }
 
-.row p {
+[name$=-tour] + .row p {
     text-align: justify;
     color: white;
 }
@@ -91,16 +91,16 @@ footer .row p{
 }
 
 @media screen and (min-height: 360px){
-    .row{
+    [name$=-tour] + .row{
         height:640px;
     }
     
-    .row h1{
+    [name$=-tour] + .row h1{
         font-size: 32px;
         margin-bottom:30px;
     }
     
-    .row p{
+    [name$=-tour] + .row p{
         font-size: 14px;
         height: 180px;
     }
@@ -127,21 +127,21 @@ footer .row p{
 }
 
 @media screen and (min-height: 640px)  {
-    .row{ 
+    [name$=-tour] + .row{ 
         height: 940px;
     }
 
-    .row h1{
+    [name$=-tour] + .row h1{
         font-size: 48px;
         margin-bottom: 30px;
     }
 
-    .row p{ 
+    [name$=-tour] + .row p{ 
         font-size: 24px;
         height: 240px;
     }
     
-    .row .btn{
+    [name$=-tour] + .row .btn{
         width: 180px;
         font-size:25px;
     }
