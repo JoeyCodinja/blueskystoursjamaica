@@ -85,7 +85,7 @@ footer .row p{
     }
 }
 
-@media screen and (min-height: 640px){
+@media screen and (min-height: 360px){
     .row{
         height:640px;
     }
@@ -120,11 +120,11 @@ footer .row p{
     }
 }
 
-@media screen and (min-height: 768px)  {
+@media screen and (min-height: 640px)  {
     .row{ 
         height: 940px;
     }
-    
+
     .row h1{
         font-size: 64px;
         margin-bottom:30px;
