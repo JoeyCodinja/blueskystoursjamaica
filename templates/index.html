@@ -37,21 +37,33 @@
             <div class="navbar-header">
                 <a class="navbar-brand" href="#" style="padding:0px;">
                     <img src="{{ url_for('static', filename='img/blueskystoursstencil2-white.png') }}"
-                         class="center-block"
-                         style="height:inherit;"/>
+                         class="center-block"/>
                 </a>
             </div>
         </div>
         <!-- /.container -->
     </nav>
+    <nav class="navbar navbar-inverse navbar-fixed-top tours" role='navigation' style="margin-top: 100px;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">
+                    <b><i>Tours:</i></b>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#kingston-tour">Kingston </a></li>
+                    <li><a href="#blue-mountain-tour">Blue Mountain</a></li>
+                    <li><a href="#port-royal-tour">Port Royal</a></li>
+                    <li><a href="#out-of-town-tour">Out of Town</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
 
     <!-- Full Page Image Background Carousel Header -->
     <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        </ol>
-
         <!-- Wrapper for Slides -->
         <div class="carousel-inner">
             <div class="item active">
@@ -60,35 +72,10 @@
                 <div class="carousel-caption">
                     <h2>Tours that EXCITE, ENTERTAIN and EDUCATE.</h2>
                     
-                    <h2 class="btn btn-default"
-                        href="#tours"> BOOK YOUR TOUR NOW! </h2>
-                        <br/> <br/>
-                    
-                    <h2> Tours Offered: </h2>
-                    <h4> 
-                        <a class='btn btn-default' href="#kingston-tour">Kingston</a> 
-                    </h4>
-                    <h4>
-                        <a class='btn btn-default' href="#blue-mountain-tour">Blue Mountain</a> 
-                    </h4>
-                    <h4> 
-                        <a class='btn btn-default' href="#port-royal-tour"> Port Royal </a>
-                    </h4>
-                    <h4> 
-                        <a class='btn btn-default' href="#out-of-town-tour"> Out of Town </a> 
-                    </h4>
+                    <h2> BOOK YOUR TOUR NOW! </h2>
                 </div>
             </div>
         </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-
     </header>
 
     <!-- Page Content -->
@@ -180,7 +167,7 @@
                         beaten path.” 
                     </p>
                     <a class="btn btn-default"
-                       href="mailto:infinity.genservices@gmail.com?Subject=Out%20Of%20Town%Tours">
+                       href="mailto:infinity.genservices@gmail.com?Subject=Out%20Of%20Town%20Tours">
                         Book Now
                     </a>
                 </div>
