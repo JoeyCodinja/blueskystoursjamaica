@@ -40,6 +40,9 @@
                          class="center-block"/>
                 </a>
             </div>
+            <div class="nav navbar-nav navbar-right">
+                <p>Contact Us: </p>
+            </div>
         </div>
         <!-- /.container -->
     </nav>
@@ -79,9 +82,11 @@
                      style="background-image:url('{{url_for('static', filename='img/border.jpeg')}}');
                             background-position: 0px 85px;"></div>
                 <div class="carousel-caption">
-                    <h2>Tours that EXCITE, ENTERTAIN and EDUCATE.</h2>
-                    
-                    <h2> BOOK YOUR TOUR NOW! </h2>
+                    <h2>Tours that EXCITE, ENTERTAIN and EDUCATE</h2>
+                    <br/>
+                    <br/>
+                    <h2> Book your tour below! </h2>
+                    <a class="btn btn-default" href="#tours">More Information about tours</a>
                 </div>
             </div>
         </div>
@@ -90,14 +95,62 @@
     <!-- Page Content -->
     <div class="container-fluid" name="content">
             <a name="tours"></a>
+            <!-- <div class="row">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-4">
+                        <h1>General Tours Information</h1>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h1 class="panel-title">Our Clients </h1>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                We cater to visitors, locals, corporate clients, 
+                                educational institutions, church conventions and family reunions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h1 class="panel-title"> Who can tour with us ? </h1>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                Anyone interested in learning about Jamaica is invited on our tours.
+                                All out tours are conducted by trained and professional tour guides 
+                                within a comfortable, safe and secure environment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h1 class="panel-title"> Tour costs </h1>
+                        </div> 
+                        <div class="panel-body">
+                            <p>
+                                Tours begin at $100(USD) per person. Group rate applies for 6 persons 
+                                or more. Local rate applies for educational institutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div> -->
             <a name="kingston-tour"></a>
             <div class="row" 
-                 style="background: linear-gradient(to right, #67e071, rgba(0, 0, 0, 0)), url({{ url_for('static', filename='img/scenery3.jpeg')}});
+                 style="background: linear-gradient(to right, rgba(0, 0, 0, 0) 94% , #67e071 100%), url({{ url_for('static', filename='img/scenery3.jpeg')}});
                         background-size:cover;
                  ">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h1 style="display: inline-block;
-                               text-shadow: 0px 6px 10px #1E9428;
                                padding-right: 30px;">
                         Kingston Tour
                     </h1>
@@ -121,17 +174,16 @@
             </div>
             <a name="port-royal-tour"></a>
             <div class="row" 
-                 style="background: linear-gradient(to right, #66a2e2, rgba(0, 0, 0, 0)), url({{url_for('static', filename='img/port-royal-tour.jpeg')}});
+                 style="background: linear-gradient(to right, #66a2e2 0% , rgba(0, 0, 0, 0) 6%), url({{url_for('static', filename='img/port-royal-tour.jpeg')}});
                         background-size:cover;">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h1 style="display: inline-block;
-                               text-shadow: 0px 6px 10px #1D5796;
                                padding-right: 30px;">
                         Port Royal Tour
                     </h1>
                     <p>
                         Visit which was once called, the “Richest and Wickedest 
-                        City in the whole world.” Learnabout the Buccaneers, 
+                        City in the whole world.” <br/><br/>Learn about the Buccaneers, 
                         the great earthquake, enjoy the town’s history, scenery
                         and enjoy a delicious Jamaican seafood meal. Also view 
                         the Plumbline Light house and be renewed and revived at
@@ -145,18 +197,17 @@
             </div>
             <a name="blue-mountain-tour"></a>
             <div class="row" 
-                 style="background: linear-gradient(to right, #eae667, rgba(0, 0, 0, 0)), url({{ url_for('static', filename='img/blue-mountain-tours.jpeg')}}) ; 
+                 style="background: linear-gradient(to right,  rgba(0, 0, 0, 0) 94% , #eae667 100%), url({{ url_for('static', filename='img/blue-mountain-tours.jpeg')}}) ; 
                         background-size: 100% 100%;">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h1 style="display: inline-block; 
-                               text-shadow: 0px 6px 10px #99975a;
                                padding-right:30px;">
                         Blue Mountain Tour
                     </h1>
                     <p>
                         Take the trip up to our world re-nowned Blue Mountains 
-                        where you will enjoy spectacular views. Enjoy New Castle
-                        one of our army's bases then visit Hollywell Botanical
+                        where you will enjoy spectacular views. </br>Enjoy New Castle
+                        one of our army's bases, then visit Hollywell Botanical
                         Gardens where you can hike, swim or just enjoy the 
                         beautiful garden with its indegenous flowers, fauna and 
                         birds. Then on to Cafe Blue for our world class coffee
@@ -170,14 +221,13 @@
             </div>
             <a name="out-of-town-tour"></a>
             <div class="row" 
-                 style="background: linear-gradient(to right, #e05c5c, rgba(0, 0, 0, 0)), url({{ url_for('static', filename='img/out-of-town-tours.jpeg')}});
+                 style="background: linear-gradient(to right, #e05c5c 0%, rgba(0, 0, 0, 0) 6%), url({{ url_for('static', filename='img/out-of-town-tours.jpeg')}});
                         background-size: cover;
                         background-position:0px -683px;">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h1 style="display: inline-block;
-                               text-shadow: 0px 6px 10px #961D1D;
                                padding-right:30px;">
-                        Out of Town Tours
+                        Off The Beaten Track Tours
                     </h1>
                     <p>
                         Based on personal requests, tailored to meet and exceed

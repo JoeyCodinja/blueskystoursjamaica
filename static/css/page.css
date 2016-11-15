@@ -20,10 +20,6 @@
     margin-left: 35%;
 }
 
-.navbar.tours{
-    margin-top:60px;
-}
-
 .panel-body p{ 
     font-size: medium;
 }
@@ -32,17 +28,28 @@
     font-size: x-large;
 }
 
-[name$=-tour] + .row{ 
-    padding-top:180px;
+.panel.panel-default{
+    height: 180px;
+}
+
+header#myCarousel{
+    margin-bottom:5px;
+}
+
+[name$=-tour] + .row, [name=tours] + .row{ 
+    padding-top:120px;
+    margin-bottom:5px;
 } 
 
 [name$=-tour] + .row h1{
     color:white;
+    text-shadow: 0px 6px 10px black;
 }
 
 [name$=-tour] + .row p {
     text-align: justify;
     color: white;
+    text-shadow: 0px 6px 10px black;
 }
 
 .row .btn{ 
@@ -88,13 +95,20 @@ footer .row p{
 
 
 
-@media screen and (min-width: 360px) {
-    .carousel-caption {
+@media screen and (min-width: 320px){
+    .carousel-caption{
         bottom:25%;
     }
-}
 
-@media screen and (min-height: 360px){
+    .carousel-inner .fill{
+        background-position: center !important;
+    }
+
+    .navbar.tours{
+        margin-top: 50px;
+        height: 50px;
+    }
+
     [name$=-tour] + .row{
         height:640px;
     }
@@ -105,15 +119,19 @@ footer .row p{
     }
     
     [name$=-tour] + .row p{
-        font-size: 18px;
-        height: 180px;
+        font-size: 14px;
+        height: 320px;
     }
+
+    [name$=-tour] + .row, [name=tours] + .row{ 
+        padding-top: 120px;
+        margin-bottom: 5px;
+    } 
     
     .row .btn{
         width: 180px;
-        font-size:15px;
+        font-size:14px;
     }
-    
 }
 
 @media screen and (min-width: 768px) {
@@ -128,21 +146,30 @@ footer .row p{
     .navbar *{
         height:inherit;
     }
-}
 
-@media screen and (min-height: 640px)  {
-    [name$=-tour] + .row{ 
-        height: 940px;
+    .navbar.tours{
+        height: 60px;
+        margin-top: 60px;
     }
+
+    [name$=-tour] + .row{ 
+        height: 840px;
+    }
+
+    [name$=-tour] + .row, [name=tours] + .row{ 
+        padding-top:160 px;
+        margin-bottom:5px;
+    } 
 
     [name$=-tour] + .row h1{
         font-size: 48px;
+        margin-top: 0px;
         margin-bottom: 30px;
     }
 
     [name$=-tour] + .row p{ 
-        font-size: 20px;
-        height: 260px;
+        font-size: 20px ;
+        height: 320px;
     }
     
     [name$=-tour] + .row .btn{
