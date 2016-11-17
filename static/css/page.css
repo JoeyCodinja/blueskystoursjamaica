@@ -34,7 +34,7 @@ header#myCarousel{
 
 [name=tours] + .row{
     margin-bottom: 5px;
-    padding
+    background-color: #FCEE55;
 }
 
 [name$=-tour] + .row, [name=tours] + .row{ 
@@ -42,9 +42,13 @@ header#myCarousel{
     margin-bottom:5px;
 } 
 
-[name$=-tour] + .row h1{
+[name$=-tour] + .row h1, [name=tours] + .row h1{
     color:white;
     text-shadow: 0px 6px 10px black;
+}
+
+[name=tours] + .row .row h1{
+    color:#333;
 }
 
 [name$=-tour] + .row p {
@@ -53,22 +57,24 @@ header#myCarousel{
     text-shadow: 0px 6px 10px black;
 }
 
-.container-fluid > .row:first-of-type{
+[name = tours] + .row{
     padding-bottom: 320px;
 }
 
-.container-fluid > .row:first-of-type .panel-title{
+
+[name=tours] + .row .panel-title{
     text-align:center;
     font-size: 22px;
     text-shadow: 0px 2px 2px #aaa;
+    color: #333;
 }
 
-.container-fluid > .row:first-of-type .panel {
+[name=tours] + .row .panel {
     border-color: #bbb;
     border-width: 2px;
 }
 
-.container-fluid > .row:first-of-type .panel-heading{
+[name=tours] + .row .panel-heading{
     border-width: 3px;
 }
 
@@ -100,24 +106,6 @@ footer .row p{
     width:240px;
 }
 
-.carousel-caption h4:nth-child(1){
-    background-color: #67E071;
-    border-color: #;
-}
-
-.carousel-caption h4:nth-child(2){
-    
-}
-
-.carousel-caption h4:nth-child(3){
-    
-}
-
-.carousel-caption h4:nth-child(4){
-    
-}
-
-
 
 @media screen and (min-width: 320px){
     .carousel-caption{
@@ -137,7 +125,7 @@ footer .row p{
         height:640px;
     }
     
-    [name$=-tour] + .row h1{
+    [name$=-tour] + .row h1 [name=tours] + .row h1{
         font-size: 32px;
         margin-bottom:30px;
     }
@@ -203,7 +191,7 @@ footer .row p{
         margin-bottom: 30px;
     }
 
-    [name$=-tour] + .row p{ 
+    [name$=-tour] + .row p,{ 
         font-size: 20px ;
         height: 320px;
     }
