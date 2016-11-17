@@ -79,8 +79,7 @@
             <div class="item active">
                 <!-- Set the first background image using inline CSS below. -->
                 <div class="fill" 
-                     style="background-image:url('{{url_for('static', filename='img/border.jpeg')}}');
-                            background-position: 0px 85px;"></div>
+                     style="background-image:url('{{url_for('static', filename='img/border.jpeg')}}');"></div>
                 <div class="carousel-caption">
                     <h2>Tours that EXCITE, ENTERTAIN and EDUCATE</h2>
                     <br/>
@@ -95,13 +94,14 @@
     <!-- Page Content -->
     <div class="container-fluid" name="content">
             <a name="tours"></a>
-            <!-- <div class="row">
+            <div class="row">
                 <div class="row">
                     <div class="col-lg-4 col-lg-offset-4">
                         <h1>General Tours Information</h1>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="row buffer"></div>
+                <div class="col-lg-8 col-lg-offset-2">
 
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -109,18 +109,8 @@
                         </div>
                         <div class="panel-body">
                             <p>
-                                We cater to visitors, locals, corporate clients, 
-                                educational institutions, church conventions and family reunions.
+                                We cater to visitors, locals, corporate clients, educational institutions, church conventions, corporate clients, family reunions. Anyone interested in learning about Jamaica is invited on our tours. All our tours are conducted by trained and professional tour guides within a comfortable, safe and secure environment.
                             </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h1 class="panel-title"> Who can tour with us ? </h1>
-                        </div>
-                        <div class="panel-body">
                             <p>
                                 Anyone interested in learning about Jamaica is invited on our tours.
                                 All out tours are conducted by trained and professional tour guides 
@@ -129,24 +119,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-lg-offset-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h1 class="panel-title"> Tour costs </h1>
                         </div> 
                         <div class="panel-body">
                             <p>
-                                Tours begin at $100(USD) per person. Group rate applies for 6 persons 
-                                or more. Local rate applies for educational institutions.
+                                Tours begin at $100USD per person except for” Out Of Town Tours”. Group rate applies for 6 persons or more and local rate applies for all educational institutions. We also offer bread and breakfast accommodation and transportation.
                             </p>
                         </div>
                     </div>
                 </div>
                 
-            </div> -->
+            </div>
             <a name="kingston-tour"></a>
             <div class="row" 
-                 style="background: linear-gradient(to right, rgba(0, 0, 0, 0) 94% , #67e071 100%), url({{ url_for('static', filename='img/scenery3.jpeg')}});
+                 style="background: url({{ url_for('static', filename='img/scenery3.jpeg') }});
                         background-size:cover;
                  ">
                 <div class="col-lg-8 col-lg-offset-2">
@@ -167,14 +156,14 @@
                         people and enjoy, the “Heartbeat of Jamaica”.
                     </p>
                     <a class="btn btn-default" 
-                       href="mailto:infinity.genservices@gmail.com?Subject=Kingston%20Tours">
+                       href="mailto:infini ty.genservices@gmail.com?Subject=Kingston%20Tours">
                         Book Now
                     </a>
                 </div>
             </div>
             <a name="port-royal-tour"></a>
             <div class="row" 
-                 style="background: linear-gradient(to right, #66a2e2 0% , rgba(0, 0, 0, 0) 6%), url({{url_for('static', filename='img/port-royal-tour.jpeg')}});
+                 style="background: url({{url_for('static', filename='img/port-royal-tour.jpeg')}});
                         background-size:cover;">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h1 style="display: inline-block;
@@ -190,14 +179,14 @@
                         the Rock fort Mineral Bath.
                     </p>
                     <a class="btn btn-default" 
-                       href="mailto:infinity.genservies@gmail.com?Subject=Port%Royal&20Tour">
+                       href="mailto:infinity.genservies@gmail.com?Subject=Port%Royal%20Tour">
                         Book Now
                     </a>
                 </div>
             </div>
             <a name="blue-mountain-tour"></a>
             <div class="row" 
-                 style="background: linear-gradient(to right,  rgba(0, 0, 0, 0) 94% , #eae667 100%), url({{ url_for('static', filename='img/blue-mountain-tours.jpeg')}}) ; 
+                 style="background: url({{ url_for('static', filename='img/blue-mountain-tours.jpeg')}}) ; 
                         background-size: 100% 100%;">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h1 style="display: inline-block; 
@@ -221,7 +210,7 @@
             </div>
             <a name="out-of-town-tour"></a>
             <div class="row" 
-                 style="background: linear-gradient(to right, #e05c5c 0%, rgba(0, 0, 0, 0) 6%), url({{ url_for('static', filename='img/out-of-town-tours.jpeg')}});
+                 style="background: url({{ url_for('static', filename='img/out-of-town-tours.jpeg') }});
                         background-size: cover;
                         background-position:0px -683px;">
                 <div class="col-lg-8 col-lg-offset-2">
@@ -230,10 +219,13 @@
                         Off The Beaten Track Tours
                     </h1>
                     <p>
-                        Based on personal requests, tailored to meet and exceed
-                        our visitors’ expectations. Include the North, South, 
-                        East and West Coasts of Jamaica, designed as, “off the 
-                        beaten path.” 
+                        Based on personal requests, tailored to meet and exceed our visitors’ expectations.
+                        May include the North, South, East and West Coasts of Jamaica, designed as, “off 
+                        the beaten Path” tours. From Negril to Morant Point we can take you where you want 
+                        to go while giving you that unique, enjoyable and memorable Jamaican experience. 
+                        You may choose to visit Ocho Rios , Montego Bay, Negril, Treasure Beach, Mandeville, 
+                        Falmouth etc. You design your own tour and we will take you there.*<br><br><br>
+                        <small>**(Special rates apply)</small>
                     </p>
                     <a class="btn btn-default"
                        href="mailto:infinity.genservices@gmail.com?Subject=Out%20Of%20Town%20Tours">

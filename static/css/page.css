@@ -28,12 +28,13 @@
     font-size: x-large;
 }
 
-.panel.panel-default{
-    height: 180px;
-}
-
 header#myCarousel{
     margin-bottom:5px;
+}
+
+[name=tours] + .row{
+    margin-bottom: 5px;
+    padding
 }
 
 [name$=-tour] + .row, [name=tours] + .row{ 
@@ -52,11 +53,34 @@ header#myCarousel{
     text-shadow: 0px 6px 10px black;
 }
 
+.container-fluid > .row:first-of-type{
+    padding-bottom: 320px;
+}
+
+.container-fluid > .row:first-of-type .panel-title{
+    text-align:center;
+    font-size: 22px;
+    text-shadow: 0px 2px 2px #aaa;
+}
+
+.container-fluid > .row:first-of-type .panel {
+    border-color: #bbb;
+    border-width: 2px;
+}
+
+.container-fluid > .row:first-of-type .panel-heading{
+    border-width: 3px;
+}
+
 .row .btn{ 
     display:block;
     margin-left:auto;
     margin-right:auto;
     box-shadow: 2px 2px 10px black;
+}
+
+.row.buffer{
+    height:20px;
 }
 
 footer .row{
@@ -127,6 +151,14 @@ footer .row p{
         padding-top: 120px;
         margin-bottom: 5px;
     } 
+
+    .container-fluid > .row:first-of-type .panel-title{
+        font-size: 16px;
+    }
+
+    .panel-body p {
+        font-size: x-small;
+    }
     
     .row .btn{
         width: 180px;
@@ -137,6 +169,10 @@ footer .row p{
 @media screen and (min-width: 768px) {
     .carousel-caption {
         bottom:40%;
+    }
+
+    .carousel-inner .fill{ 
+        background-position: 0px 85px;
     }
     
     .navbar.navbar-fixed-top{    
@@ -157,7 +193,7 @@ footer .row p{
     }
 
     [name$=-tour] + .row, [name=tours] + .row{ 
-        padding-top:160 px;
+        padding-top:160px;
         margin-bottom:5px;
     } 
 
@@ -175,6 +211,10 @@ footer .row p{
     [name$=-tour] + .row .btn{
         width: 180px;
         font-size:25px;
+    }
+
+    .panel-body p {
+        font-size: 14px;
     }
 }
 
