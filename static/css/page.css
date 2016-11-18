@@ -106,14 +106,15 @@ footer .row p{
     width:240px;
 }
 
+@media screen and (max-width: 320px){
+    .carousel-inner .fill{ 
+        background-position: center;
+    }
+}
 
 @media screen and (min-width: 320px){
     .carousel-caption{
         bottom:25%;
-    }
-
-    .carousel-inner .fill{
-        background-position: center !important;
     }
 
     .navbar.tours{
@@ -125,7 +126,7 @@ footer .row p{
         height:640px;
     }
     
-    [name$=-tour] + .row h1 [name=tours] + .row h1{
+    [name$=-tour] + .row h1, [name=tours] + .row h1{
         font-size: 32px;
         margin-bottom:30px;
     }
@@ -160,7 +161,7 @@ footer .row p{
     }
 
     .carousel-inner .fill{ 
-        background-position: 0px 85px;
+        background-position: 0px 110px;
     }
     
     .navbar.navbar-fixed-top{    
@@ -181,8 +182,8 @@ footer .row p{
     }
 
     [name$=-tour] + .row, [name=tours] + .row{ 
-        padding-top:160px;
-        margin-bottom:5px;
+        padding-top: 160px;
+        margin-bottom: 5px;
     } 
 
     [name$=-tour] + .row h1{
@@ -191,14 +192,14 @@ footer .row p{
         margin-bottom: 30px;
     }
 
-    [name$=-tour] + .row p,{ 
+    [name$=-tour] + .row p{ 
         font-size: 20px ;
         height: 320px;
     }
     
     [name$=-tour] + .row .btn{
         width: 180px;
-        font-size:25px;
+        font-size: 25px;
     }
 
     .panel-body p {
