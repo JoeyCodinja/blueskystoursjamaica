@@ -36,9 +36,9 @@ header#myCarousel{
     margin-bottom:5px;
 }
 
-[name=tours] + .row{
-    margin-bottom: 5px;
-    background-color: #FCEE55;
+[name$=-tour] + .row{
+    box-shadow: 2px 2px 10px black;
+    border-radius: 15px;    
 }
 
 [name$=-tour] + .row, [name=tours] + .row{ 
@@ -61,8 +61,10 @@ header#myCarousel{
     text-shadow: 0px 6px 10px black;
 }
 
-[name = tours] + .row{
+[name=tours] + .row{
     padding-bottom: 320px;
+    margin-bottom: 5px;
+    background-color: #FCEE55;
 }
 
 
